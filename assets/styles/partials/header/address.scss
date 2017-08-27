@@ -1,0 +1,72 @@
+// Адрес в хедере
+.address {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex: 0 0 30%;
+    flex-direction: column;
+    padding-left: 1.5em;
+    &__sc {
+        justify-content: flex-start;
+    }
+    &__road {
+        justify-content: flex-start;
+    }
+    &__title {
+        display: flex;
+        justify-content: space-between;
+        font-size: .8em;
+        color: #b2b2b2;
+        line-height: 1.2em;
+        font-weight: 300;
+        position: relative;
+        // border-bottom: 1px dashed #f2f2f2;
+        font-variant: small-caps;
+        letter-spacing: .05em;
+    }
+    &__title-icon {
+        position: absolute;
+        left: -1.8em;
+        top: 0;
+    }
+    &__title-text {
+        font-size: .8em;
+        background-color: #fff;
+    }
+    &__title-link {
+        color: rgba($accent-color, .8);
+        &:hover {
+            color: $accent-color;
+        }
+    }
+    &__address {
+        display:block;
+        font-size: .75em;
+        color: #626262;
+        margin-bottom: 1em;
+        margin-top: .2em;
+    }
+    &__icon {
+        color: #b2b2b2;
+        font-size: .8em;
+        
+    }
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        padding-left: 0;
+        font-size: .8em;
+        margin-top: .3em;
+        margin-bottom: 0;
+        color: #626262;
+    }
+    &__list-item {
+        font-size: .9em;
+        line-height: 1.2em;
+        padding: .3em;
+        &:first-child {
+            padding-left: 0;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+.header {
+    &__top-line {
+        background-image: linear-gradient(to top, $second-color, $second-color-dark);
+    }
+    &__middle-line, &__bottom-line, &__top-line {
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    }
+    &__bottom-line {
+        background-image: linear-gradient(to top, $main-color, $main-color-light);
+        box-shadow: -2px 2px 6px rgba(0,0,0,0.3);
+    }
+}

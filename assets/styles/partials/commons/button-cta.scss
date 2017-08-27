@@ -1,0 +1,51 @@
+.button-cta {
+    position: relative;
+    font-size: 14px;
+    padding: .5em 1em .5em 3.5em;
+    border: 2px solid $accent-color;
+    border-radius: 20px;
+    display: block;
+    overflow: hidden;
+    color: #666;
+    background-color: #fff;
+    &:hover, &:focus {
+        background-color: #f1f1f1;
+        text-decoration: none;
+        color: #333;
+        cursor: pointer;
+    }
+    &_with-copy {
+        padding-right: 2.5em;
+    }
+    & + & {
+        margin-left: 15px;
+    }
+    &__icon {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 2em;
+        padding: .32em;
+        text-align: center;
+        height: 1.7em;
+        font-size: 1.5em;
+        display: block;
+        background-color: $accent-color;
+        color: #fff;
+        &.fa-envelope-o {
+            padding: .3em;
+        }
+    }
+    &__copy {
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: .32em;
+        padding: .8em;
+        text-align: center;
+        color: #ccc;
+        &:hover {
+            color: #333;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+// Стили Header
+
+@import "header/header";
+@import "header/menu";
+@import "header/logo";
+@import "header/address";
+@import "header/phone";
+
+
+// Общие стили
+@import "commons/breadcrumb";
+@import "commons/button-cta";
+@import "commons/service-center-block";
+
+
+// Стили карточки услуги
+@import "service/service";
