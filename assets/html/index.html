@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__top-line">
+      <div class="container">
+        <ul class="menu menu_theme_top">
+          <li class="menu__item dropdown">
+            <a href="#" class="menu__link menu__link_dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Команда</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">О команде</a>
+              <a class="dropdown-item" href="#">Наша миссия</a>
+              <a class="dropdown-item" href="#">Наши принципы</a>
+              <a class="dropdown-item" href="#">Реквизиты</a>
+            </div>
+          </li>
+          <li class="menu__item dropdown">
+            <a href="#" class="menu__link menu__link_dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Клиентам</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Гарантия</a>
+              <a class="dropdown-item" href="#">Оплата</a>
+              <a class="dropdown-item" href="#">Преимущества</a>
+              <a class="dropdown-item" href="#">Отзывы клиентов</a>
+              <a class="dropdown-item" href="#">Проверить статус ремонта</a>
+            </div>
+          </li>
+          <li class="menu__item dropdown">
+            <a href="#" class="menu__link menu__link_dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Сервисный центр</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">О сервисном центре</a>
+              <a class="dropdown-item" href="#">Схема проезда</a>
+            </div>
+          </li>
+          <li class="menu__item dropdown">
+            <a href="#" class="menu__link menu__link_dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ремонт на выезде</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">География обслуживания</a>
+              <a class="dropdown-item" href="#">Вызвать мастера</a>
+            </div>
+          </li>
+          <li class="menu__item"><a href="#" class="menu__link">Магазин</a></li>
+          <!--<li class="menu__item"><a href="#" class="menu__link">Вакансии</a></li>-->
+          <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+        </ul>
+        <ul class="menu menu_theme_icons">
+          <li class="menu__item dropdown">
+            <a href="#" class="menu__link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user"></i></a>
+            <div class="dropdown-menu dropdown-menu-right">
+              <a class="dropdown-item" href="#">Профиль</a>
+              <a class="dropdown-item" href="#">Мои ремонты</a>
+              <a class="dropdown-item" href="#">Тикеты</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Выход</a>
+            </div>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-search"></i></a>
+            <div class="dropdown-menu dropdown-menu-search dropdown-menu-right">
+              <form action="/" class="form-search">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Поиск...">
+                  <div class="input-group-btn">
+                    <button class="btn btn-secondary" type="button">OK</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link" data-container="body" data-toggle="popover" data-placement="bottom" data-content="1 сообщение в онлайн чате">
+                            <i class="fa fa-comments-o"></i>
+                        </a>
+            <span class="menu_bange">1</span>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link"><i class="fa fa-shopping-cart"></i></a>
+            <span class="menu_bange">2</span>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Отложенные товары и услуги">
+                            <i class="fa fa-heart-o"></i>
+                        </a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Проверка статуса ремонта">
+              <svg class="contacts-list-item__icon-image" style="width: 24px; height: 24px;">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/icons-sprite.svg#home"></use>
+              </svg>
+            </a>
+            <span class="menu_bange">99</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="header__middle-line">
+      <div class="container">
+        <div class="logo">
+          <a href="/" class="logo__link">
+                        <img src="http://s-komkm.udelta.ru/images/logo-komkm.svg" alt="Команда компьютерных мастеров" class="logo__image">
+                    </a>
+        </div>
+        <div class="address">
+          <div class="address__sc">
+            <div class="address__title">
+              <i class="fa fa-map-marker fa-fw address__title-icon"></i>
+              <span class="header__title-text">Сервисный центр</span>
+            </div>
+            <span class="address__address">г. Химки, ул. Горшина 1</span>
+          </div>
+          <div class="address__road">
+
+            <div class="address__title">
+              <i class="fa fa-map-o fa-fw address__title-icon"></i>
+              <span class="header__title-text">Регионы обслуживания</span>
+              <a href="" class="address__title-link">Все</a>
+            </div>
+            <ul class="address__list">
+              <li class="address__list-item">Сходня</li>
+              <li class="address__list-item">Новогорск</li>
+              <li class="address__list-item">Куркино</li>
+              <li class="address__list-item">Подрезкого</li>
+            </ul>
+
+          </div>
+        </div>
+        <div class="phone">
+          <div class="phone__number">+7 (495) 623-40-75</div>
+          <div class="phone__after">
+            <a href="mailto:info@komkm.ru" class="button-cta button-cta_with-copy">
+                            <i class="fa fa-envelope-o button-cta__icon"></i> info@komkm.ru
+                            <i class="fa fa-files-o button-cta__copy" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Скопировать адрес в буфер обмена"></i>
+                        </a>
+            <button class="button-cta" data-toggle="modal" data-target="#callme-modal">
+                            <i class="fa fa-phone button-cta__icon"></i>
+                            Перезвоните мне
+                        </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="header__bottom-line">
+      <div class="container">
+        <ul class="menu menu_theme_main">
+          <li class="menu__item dropdown">
+            <a href="" class="menu__link menu__link_dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ремонт устройств</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Ноутбуки</a>
+              <a class="dropdown-item" href="#">Компьютеры</a>
+              <a class="dropdown-item" href="#">Планшеты</a>
+              <a class="dropdown-item" href="#">Мобильные телефоны</a>
+              <a class="dropdown-item" href="#">Принтера и МФУ</a>
+              <a class="dropdown-item" href="#">GPS навигаторы</a>
+              <a class="dropdown-item" href="#">Телевизоры</a>
+            </div>
+          </li>
+          <li class="menu__item dropdown">
+            <a href="" class="menu__link menu__link_dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Компьютерная помощь</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Установка программ</a>
+              <a class="dropdown-item" href="#">Настройка программного обеспечения</a>
+              <a class="dropdown-item" href="#">Удаление вирусов и программ</a>
+              <a class="dropdown-item" href="#">Обслуживание</a>
+              <a class="dropdown-item" href="#">Сборка компьютера под заказ</a>
+            </div>
+          </li>
+          <li class="menu__item dropdown">
+            <a href="" class="menu__link menu__link_dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Сети и интернет</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Прокладка сетей</a>
+              <a class="dropdown-item" href="#">Настройка</a>
+              <a class="dropdown-item" href="#">Исправление проблем</a>
+            </div>
+          </li>
+          <li class="menu__item dropdown">
+            <a href="" class="menu__link menu__link_dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Восстановление данных</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Устройства</a>
+              <a class="dropdown-item" href="#">Виды данных</a>
+              <a class="dropdown-item" href="#">Проишествия</a>
+            </div>
+          </li>
+        </ul>
+        <ul class="menu menu_theme_main">
+          <li class="menu__item dropdown">
+            <a href="#" class="menu__link menu__link_dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Онлайн помощь</a>
+            <div class="dropdown-menu dropdown-menu-right">
+              <a class="dropdown-item" href="#">Типовые неисправности</a>
+              <a class="dropdown-item" href="#">Все вопросы</a>
+              <a class="dropdown-item" href="#">Задать свой вопрос</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <nav class="breadcrumb">
+    <div class="container">
+      <ol class="breadcrumb__list">
+        <li class="breadcrumb__item">
+          <a href="" class="breadcrumb__link"><i class="fa fa-home"></i></a>
+        </li>
+        <li class="breadcrumb__item">
+          <a href="" class="breadcrumb__link">Услуги</a></li>
+        <li class="breadcrumb__item">
+          <a href="" class="breadcrumb__link">Ремонт устройств</a>
+        </li>
+        <li class="breadcrumb__item">
+          <a href="" class="breadcrumb__link">Ноутбук</a>
+        </li>
+        <li class="breadcrumb__item">
+          <a href="" class="breadcrumb__link">Замена матрицы</a>
+        </li>
+      </ol>
+    </div>
+  </nav>
+  <div class="service" itemscope itemtype="http://schema.org/Service">
+    <meta itemprop="serviceType" content="Ремонт" />
+    <meta itemprop="category" content="Ремонт ноутбуков" />
+    <div class="container">
+      <h1 class="service__title" itemprop="name">Замена матрицы ноутбука</h1>
+      <main class="service__main">
+        <div class="image-block">
+          <img src="http://s-komkm.udelta.ru/images/zamena-matrizi.jpg" alt="Замена матрицы ноутбука" class="image-block__main-image"
+            itemprop="image" />
+          <div class="other-devices">
+            <a href="#" class="other-devices__link other-devices__link_active" data-container="body" data-toggle="popover" data-placement="bottom"
+              data-content="Замена матрицы ноутбука">
+                            <i class="fa fa-laptop other-devices__icon"></i>
+                        </a>
+            <a href="#" class="other-devices__link" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Замена матрицы планшета">
+                            <i class="fa fa-tablet other-devices__icon"></i>
+                        </a>
+            <a href="#" class="other-devices__link" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Замена матрицы телефона">
+                            <i class="fa fa-mobile other-devices__icon"></i>
+                        </a>
+            <a href="#" class="other-devices__link" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Замена матрицы моноблока">
+                            <i class="fa fa-desktop other-devices__icon"></i>
+                        </a>
+            <a href="#" class="other-devices__link" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Замена матрицы телевизора">
+                            <i class="fa fa-television other-devices__icon"></i>
+                        </a>
+          </div>
+        </div>
+        <div class="info-block">
+          <div class="price">
+            <span class="price__value">1000</span>
+            <span class="price__currency">&#8381;</span>
+            <a href="#price" class="price__more-link" id="price-more-link">Подробнее</a>
+          </div>
+          <div class="service__description" itemprop="description">
+            <p>Матрица - самый хрупкий элемент ноутбука. Ее можно разбить, раздавить, сильно поцарапать, и работать на ноутбуке,
+              с поврежденной матрицей становиться не возможно.</p>
+            <p>Сложность замены матрицы не зависит от производителя, больше это касается конкретных моделей ноутбуков. Но, так
+              как мы имеем большой опыт в разборке и сборке ноутбуков, сложности в замене матрицы для нас нет.
+            </p>
+          </div>
+          <div class="area">
+            <h3 class="area__title">Услугу можем оказать:</h3>
+            <ul class="area-list">
+              <li class="area-item">
+                <i class="fa fa-map-marker fa-2x"></i>
+                <h4 class="area-item__title">В сервисном центре в Химках</h4>
+                <p class="area-item__desc">Приносите ваш ноутбук к нам</p>
+                <a href="#service-center-block" class="area-item__link-more" id="service-center-link">Адрес</a>
+              </li>
+              <li class="area-item">
+                <i class="fa fa-car fa-2x"></i>
+                <h4 class="area-item__title">На выезде по Химкам </h4>
+                <p class="area-item__desc">Вызовите нашего мастера на дом или офис</p>
+                <a href="" class="area-item__link-more">Вызов</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </main>
+    </div>
+
+
+
+    <div class="detail-info" id="detail-info">
+
+      <nav class="nav">
+        <a class="nav-link active" data-toggle="tab" href="#price" id="price-tab-link">
+                    <i class="fa fa-money"></i> Стоимость
+                </a>
+        <a class="nav-link" data-toggle="tab" href="#description">
+                    <i class="fa fa-info-circle"></i> Описание
+                </a>
+        <a class="nav-link" data-toggle="tab" href="#video">
+                    <i class="fa fa-video-camera"></i> Видео
+                </a>
+        <a class="nav-link" data-toggle="tab" href="#recommendations">
+                    <i class="fa fa-exclamation-circle"></i> Рекомендации
+                </a>
+        <a class="nav-link" data-toggle="tab" href="#faq">
+                    <i class="fa fa-question-circle"></i> Вопросы - ответы
+                </a>
+        <a class="nav-link" data-toggle="tab" href="#reviews">
+                    <i class="fa fa-commenting"></i> Отзывы
+                </a>
+      </nav>
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div class="tab-pane active" id="price">
+          <div class="container">
+            <div class="price-more">
+              <h5 class="price-more__title">Стоимость услуги</h5>
+              <span class="price-more__value">1000 руб.</span>
+            </div>
+            <div class="price-more">
+              <h5 class="price-more__title">Стоимость компонентов</h5>
+              <span class="price-more__value">от 2100 до 12000 руб.</span>
+              <p class="price-more__desc">Цена матрицы зависит от модели ноутбука (его размера и конструктивных особенностей). В большинстве случаев
+                мы сможем назвать цену матрицы по телефону после уточнения модели ноутбука еще до заказа. В некоторых случаях
+                точную цену можно узнать только после снятия старой матрицы и подбора аналога по парт-номеру (P/N).
+              </p>
+            </div>
+          </div>
+          <div class="total">
+            <div class="container">
+              <h2 class="total__title">Заказав услугу, Вы получите</h2>
+              <div class="total__text">
+                <p>Ноутбук с работающим экраном.</p>
+                <p>Перед заменой мы убедимся, что все остальное оборудование ноутбука работает, так как при ударе повреждения
+                  могут получить и другие компоненты ноутбука, и после замены матрицы "всплывают" дополнительные затраты.
+                  Мы предупреждаем о них до начала работ, и только после этого Вы принимаете решение о необходимости замены.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="tab-pane" id="description">
+          <div class="container">
+            <div class="description">
+              <p>Матрица - самый хрупкий элемент ноутбука. Ее можно разбить, раздавить, сильно поцарапать, и работать на ноутбуке,
+                с поврежденной матрицей становиться не возможно.</p>
+              <p>Сложность замены матрицы не зависит от производителя, больше это касается конкретных моделей ноутбуков. Но,
+                так как мы имеем большой опыт в разборке и сборке ноутбуков, сложности в замене матрицы для нас нет.
+              </p>
+              <p>Мы можем заменить экран в ноутбуке любого производителя. В том числе: Asus, Acer, HP, MSI, Toshiba, Samsung,
+                Compaq, DELL, eMachines, Fujitsu, Gigabyte, Lenovo, LG, Packard Bell, Sony.</p>
+              <p>Стоимость матрицы сильно зависят от конкретных моделей ноутбука, так что точную цену услуги уточняйте по телефону.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane" id="video">
+          <div class="container">
+            <div class="video-list">
+              <div class="video-list-item">
+                <iframe src="https://www.youtube.com/embed/9iT-rGDCo6E" class="video-list-item__video" allowfullscreen></iframe>
+                <h4 class="video-list-item__title">Замена матрицы</h4>
+                <p class="video-list-item__desc">Данное видео поможет Вам понять как без последствий для ноутбука заменить матрицу в домашних условиях.
+                </p>
+              </div>
+              <div class="video-list-item">
+                <iframe src="https://www.youtube.com/embed/taC6w9jXHac" class="video-list-item__video" allowfullscreen></iframe>
+                <h4 class="video-list-item__title">Замена матрицы</h4>
+                <p class="video-list-item__desc">Данное видео поможет Вам понять как без последствий для ноутбука заменить матрицу в домашних условиях.
+                </p>
+              </div>
+              <div class="video-list-item">
+                <iframe src="https://www.youtube.com/embed/flvbteYj7_Y" class="video-list-item__video" allowfullscreen></iframe>
+                <h4 class="video-list-item__title">Замена матрицы</h4>
+                <p class="video-list-item__desc">Данное видео поможет Вам понять как без последствий для ноутбука заменить матрицу в домашних условиях.
+                </p>
+              </div>
+              <div class="video-list-item">
+                <iframe src="https://www.youtube.com/embed/9iT-rGDCo6E" class="video-list-item__video" allowfullscreen></iframe>
+                <h4 class="video-list-item__title">Замена матрицы</h4>
+                <p class="video-list-item__desc">Данное видео поможет Вам понять как без последствий для ноутбука заменить матрицу в домашних условиях.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane" id="recommendations">
+          <div class="container">
+            <div class="recommend">
+              <h5 class="recommend__title">Совет</h5>
+              <p class="recommend__desc">Если повреждена только матрица, а в остальном ноутбук рабочий, то временно можно подключить его к телевизору
+                или монитору, и использовать, как системный блок.</p>
+            </div>
+            <div class="recommend">
+              <h5 class="recommend__title">Предупреждение</h5>
+              <p class="recommend__desc">Перед заказом замены стоит убедиться в работоспособности ноутбука после повржедения экрана.</p>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane" id="faq" role="tabpanel">
+          <div class="container">
+            <div id="accordion" role="tablist" aria-multiselectable="true">
+              <div class="card">
+                <div class="card-header" role="tab" id="headingOne">
+                  <h5 class="mb-0">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Collapsible Group Item #1
+        </a>
+                  </h5>
+                </div>
+
+                <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+                  <div class="card-block">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                    non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                    tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil
+                    anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan
+                    excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
+                    you probably haven't heard of them accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" role="tab" id="headingTwo">
+                  <h5 class="mb-0">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Collapsible Group Item #2
+        </a>
+                  </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+                  <div class="card-block">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                    non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                    tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil
+                    anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan
+                    excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
+                    you probably haven't heard of them accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" role="tab" id="headingThree">
+                  <h5 class="mb-0">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Collapsible Group Item #3
+        </a>
+                  </h5>
+                </div>
+                <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+                  <div class="card-block">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                    non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                    tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil
+                    anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan
+                    excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
+                    you probably haven't heard of them accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane" id="reviews" role="tabpanel">
+          <div class="container">Отзывы
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="service-center-block" id="service-center-block">
+      <h2 class="service-center-block__title">Наш сервисный центр в Химках</h2>
+      <div class="service-center-block__content">
+        <div class="map">
+
+          <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A8c6b8e523a1c3adf644f8e9c0aa97ff3f3a33fe839b8699b48ba1689fd8f4801&amp;width=100%25&amp;height=560&amp;lang=ru_RU&amp;scroll=false"></script>
+
+        </div>
+        <div class="service-center" itemprop="provider" itemscope itemtype="http://schema.org/ProfessionalService">
+          <div class="service-center__header">
+            <img class="service-center__logo" src="http://s-komkm.udelta.ru/images/logo-only-komkm.svg" itemprop="image logo" alt="Логотип Команды компьютерных мастров"
+            />
+            <h3 class="service-center__name" itemprop="name">Команда компьютерных мастеров</h3>
+          </div>
+
+          <meta itemprop="priceRange" content="$$" />
+          <meta itemprop="currenciesAccepted" content="RUB" />
+          <p class="service-center__text" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+            <meta itemprop="postalCode" content="141407" />
+            <meta itemprop="addressCountry" content="Российская Федерация" />
+            <meta itemprop="addressRegion" content="Московская область" />
+            <span itemprop="addressLocality">г. Химки</span>, <span itemprop="streetAddress">ул. Горшина 1, Подъезд №2</span>
+          </p>
+          <p class="service-center__desc" itemprop="description">Вход в сервис находиться около подъезда №2 со стороны остановки "Юбилейный проспект"</p>
+          <div class="service-center__coordinates">
+            <div class="service-center__coordinates-item">55°53′17″N, 37°25′47″E</div>
+            <div class="service-center__coordinates-item">55.888099, 37.429601</div>
+          </div>
+          <p class="service-center__phone" itemprop="telephone">+7 (495) 623-40-56</p>
+          <p class="service-center__mail"><a href="mailto:center@komkm.ru" class="service-center__mail-link">center@komkm.ru</a></p>
+          <div class="work-time">
+            <h4 class="work-time__title">Время работы</h4>
+            <meta itemprop="openingHours" content="Mo,Tu,We,Th,Fr 10:00-19:00, Sa 11:00-17:00, Su 11:00-15:00" />
+            <ul class="work-time-list">
+              <li class="work-time-item">
+                <div class="work-time-item__day">Понедельник</div>
+                <div class="work-time-item__time">10:00 - 19:00</div>
+              </li>
+              <li class="work-time-item work-time-item_now">
+                <div class="work-time-item__day">Вторник</div>
+                <div class="work-time-item__time">10:00 - 19:00</div>
+              </li>
+              <li class="work-time-item">
+                <div class="work-time-item__day">Среда</div>
+                <div class="work-time-item__time">10:00 - 19:00</div>
+              </li>
+              <li class="work-time-item">
+                <div class="work-time-item__day">Четверг</div>
+                <div class="work-time-item__time">10:00 - 19:00</div>
+              </li>
+              <li class="work-time-item">
+                <div class="work-time-item__day">Пятница</div>
+                <div class="work-time-item__time">10:00 - 19:00</div>
+              </li>
+              <li class="work-time-item">
+                <div class="work-time-item__day work-time-item__day_holiday">Суббота</div>
+                <div class="work-time-item__time">11:00 - 17:00</div>
+              </li>
+              <li class="work-time-item">
+                <div class="work-time-item__day work-time-item__day_holiday">Воскресенье</div>
+                <div class="work-time-item__time">11:00 - 15:00</div>
+              </li>
+            </ul>
+          </div>
+          <div class="service-center-cta">
+            <a href="#" class="service-center-cta__link" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Скачать файл PDF с картой">
+                            <i class="fa fa-download fa-2x service-center-cta__icon"></i>
+                            <span class="service-center-cta__title">Скачать PDF</span>
+                        </a>
+            <a href="#" class="service-center-cta__link" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Распечатать карту">
+                            <i class="fa fa-print fa-2x service-center-cta__icon"></i>
+                            <span class="service-center-cta__title">Распечатать</span>
+                        </a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </div>
+  <footer class="footer">
+
+  </footer>
+  <div class="modal fade" id="callme-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Введите номер телефона</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

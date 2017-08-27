@@ -41,3 +41,10 @@ import 'bootstrap/js/dist/popover';
 import 'bootstrap/js/dist/scrollspy';
 import 'bootstrap/js/dist/tab';
 import 'bootstrap/js/dist/tooltip';
+
+
+/////////////////////////////////
+// Custom scripts              //
+/////////////////////////////////
+
+import './js/myscripts';

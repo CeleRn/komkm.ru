@@ -1,4 +1,19 @@
 
-@import "~bootstrap/scss/bootstrap";
-@import "partials/header";
+/////////////////////////////////
+// Загрузка bootstrap          //
+/////////////////////////////////
 
+@import "~bootstrap/scss/bootstrap";
+
+/////////////////////////////////
+// Загрузка переменных         //
+/////////////////////////////////
+
+@import "partials/variables";
+
+/////////////////////////////////
+// Стили проекта               //
+/////////////////////////////////
+
+@import "partials/my-styles";
+@import "partials/header";

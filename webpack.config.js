@@ -10,6 +10,7 @@ const NODE_ENV = process.env.NODE_ENV || 'development';
 // Webpack плагины
 const extractCSS = require("extract-text-webpack-plugin");
 const SpriteLoaderPlugin = require('svg-sprite-loader/plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 // Настройка для SVGO-loader
 let svgoConfig = JSON.stringify({
@@ -115,9 +116,23 @@ module.exports = {
       Popper: ['popper.js', 'default'],
       // In case you imported plugins individually, you must also require them here:
       Util: "exports-loader?Util!bootstrap/js/dist/util",
-      Dropdown: "exports-loader?Dropdown!bootstrap/js/dist/dropdown"
+      Dropdown: "exports-loader?Dropdown!bootstrap/js/dist/dropdown",
+      Alert: "exports-loader?Alert!bootstrap/js/dist/alert",
+      Button: "exports-loader?Button!bootstrap/js/dist/button",
+      Carousel: "exports-loader?Carousel!bootstrap/js/dist/carousel",
+      Collapse: "exports-loader?Collapse!bootstrap/js/dist/collapse",
+      Modal: "exports-loader?Modal!bootstrap/js/dist/modal",
+      Popover: "exports-loader?Popover!bootstrap/js/dist/popover",
+      Scrollspy: "exports-loader?Scrollspy!bootstrap/js/dist/scrollspy",
+      Tab: "exports-loader?Tab!bootstrap/js/dist/tab",
+      Tooltip: "exports-loader?Tooltip!bootstrap/js/dist/tooltip"
     }),
-    new SpriteLoaderPlugin()
+    new SpriteLoaderPlugin(),
+    new HtmlWebpackPlugin({
+      title: 'My App',
+      filename: 'index.html',
+      template: 'html/index.html'
+    })
   ]
 };
 
