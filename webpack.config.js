@@ -3,6 +3,7 @@
 // Зависимости
 const webpack = require("webpack");
 const path = require('path');
+const _ = require('lodash');
 
 // Переменные
 const NODE_ENV = process.env.NODE_ENV || 'development';
@@ -99,6 +100,9 @@ module.exports = {
             loader: 'svgo-loader?' + svgoConfig
           }
         ]
+      }, {
+        test: /\.ejs$/, 
+        loader: 'ejs-render-loader'
       }
     ]
   },
@@ -110,6 +114,7 @@ module.exports = {
     }),
     new webpack.ProvidePlugin({
       NODE_ENV: JSON.stringify(NODE_ENV),
+      _: "lodash",
       $: 'jquery',
       jQuery: 'jquery',
       'window.jQuery': 'jquery',
@@ -131,7 +136,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: 'My App',
       filename: 'index.html',
-      template: 'html/index.html'
+      template: 'ejs-render?raw=true!./assets/html/index.ejs',
+      inject: 'body'
     })
   ]
 };
