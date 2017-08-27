@@ -1,0 +1,22 @@
+{
+  "name": "komkm.ru",
+  "version": "0.0.1",
+  "description": "design for site komkm.ru",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "it",
+    "site",
+    "template"
+  ],
+  "author": "CeleRn",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.0.0-beta",
+    "jquery": "^3.2.1",
+    "popper.js": "^1.11.0",
+    "webpack": "^3.5.5"
+  }
+}
