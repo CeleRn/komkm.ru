@@ -16,44 +16,44 @@ require('./images/logo-only-komkm.svg');
 /////////////////////////////////
 
 // Иконки для интерфейса
-require('./icons/balance.svg');
-require('./icons/call.svg');
-require('./icons/cart.svg');
-require('./icons/chat.svg');
-require('./icons/copy.svg');
-require('./icons/download.svg');
-require('./icons/favorite.svg');
-require('./icons/forum.svg');
-require('./icons/help.svg');
-require('./icons/home.svg');
-require('./icons/info.svg');
-require('./icons/mail.svg');
-require('./icons/map.svg');
-require('./icons/person.svg');
-require('./icons/place.svg');
-require('./icons/review.svg');
-require('./icons/repair.svg');
-require('./icons/search.svg');
-require('./icons/shipping.svg');
-require('./icons/time.svg');
-require('./icons/videocam.svg');
-require('./icons/warning.svg');
+import './icons/balance.svg';
+import './icons/call.svg';
+import './icons/cart.svg';
+import './icons/chat.svg';
+import './icons/copy.svg';
+import './icons/download.svg';
+import './icons/favorite.svg';
+import './icons/forum.svg';
+import './icons/help.svg';
+import './icons/home.svg';
+import './icons/info.svg';
+import './icons/mail.svg';
+import './icons/map.svg';
+import './icons/person.svg';
+import './icons/place.svg';
+import './icons/review.svg';
+import './icons/repair.svg';
+import './icons/search.svg';
+import './icons/shipping.svg';
+import './icons/time.svg';
+import './icons/videocam.svg';
+import './icons/warning.svg';
 // Иконки для оборудования
-require('./icons/hardware/computer.svg');
-require('./icons/hardware/gps.svg');
-require('./icons/hardware/laptop.svg');
-require('./icons/hardware/mobile.svg');
-require('./icons/hardware/monoblock.svg');
-require('./icons/hardware/photocamera.svg');
-require('./icons/hardware/printer.svg');
-require('./icons/hardware/tablet.svg');
-require('./icons/hardware/tv.svg');
+import './icons/hardware/computer.svg';
+import './icons/hardware/gps.svg';
+import './icons/hardware/laptop.svg';
+import './icons/hardware/mobile.svg';
+import './icons/hardware/monoblock.svg';
+import './icons/hardware/photocamera.svg';
+import './icons/hardware/printer.svg';
+import './icons/hardware/tablet.svg';
+import './icons/hardware/tv.svg';
 // Иконки для преимуществ
-require('./icons/advantages/merge.svg');
-require('./icons/advantages/khimki.svg');
-require('./icons/advantages/key.svg');
-require('./icons/advantages/garanty.svg');
-require('./icons/advantages/expo.svg');
+import './icons/advantages/merge.svg';
+import './icons/advantages/khimki.svg';
+import './icons/advantages/key.svg';
+import './icons/advantages/garanty.svg';
+import './icons/advantages/expo.svg';
 
 /////////////////////////////////
 // Bootstrap 4 JavaScript      //
