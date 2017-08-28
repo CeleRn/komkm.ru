@@ -16,70 +16,70 @@ require('./images/logo-only-komkm.svg');
 /////////////////////////////////
 
 // Иконки для интерфейса
-import './icons/balance.svg';
-import './icons/call.svg';
-import './icons/cart.svg';
-import './icons/chat.svg';
-import './icons/copy.svg';
-import './icons/download.svg';
-import './icons/favorite.svg';
-import './icons/forum.svg';
-import './icons/help.svg';
-import './icons/home.svg';
-import './icons/info.svg';
-import './icons/mail.svg';
-import './icons/map.svg';
-import './icons/person.svg';
-import './icons/place.svg';
-import './icons/review.svg';
-import './icons/repair.svg';
-import './icons/search.svg';
-import './icons/shipping.svg';
-import './icons/time.svg';
-import './icons/videocam.svg';
-import './icons/warning.svg';
+require('./icons/balance.svg');
+require('./icons/call.svg');
+require('./icons/cart.svg');
+require('./icons/chat.svg');
+require('./icons/copy.svg');
+require('./icons/download.svg');
+require('./icons/favorite.svg');
+require('./icons/forum.svg');
+require('./icons/help.svg');
+require('./icons/home.svg');
+require('./icons/info.svg');
+require('./icons/mail.svg');
+require('./icons/map.svg');
+require('./icons/person.svg');
+require('./icons/place.svg');
+require('./icons/review.svg');
+require('./icons/repair.svg');
+require('./icons/search.svg');
+require('./icons/shipping.svg');
+require('./icons/time.svg');
+require('./icons/videocam.svg');
+require('./icons/warning.svg');
 // Иконки для оборудования
-import './icons/hardware/computer.svg';
-import './icons/hardware/gps.svg';
-import './icons/hardware/laptop.svg';
-import './icons/hardware/mobile.svg';
-import './icons/hardware/monoblock.svg';
-import './icons/hardware/photocamera.svg';
-import './icons/hardware/printer.svg';
-import './icons/hardware/tablet.svg';
-import './icons/hardware/tv.svg';
+require('./icons/hardware/computer.svg');
+require('./icons/hardware/gps.svg');
+require('./icons/hardware/laptop.svg');
+require('./icons/hardware/mobile.svg');
+require('./icons/hardware/monoblock.svg');
+require('./icons/hardware/photocamera.svg');
+require('./icons/hardware/printer.svg');
+require('./icons/hardware/tablet.svg');
+require('./icons/hardware/tv.svg');
 // Иконки для преимуществ
-import './icons/advantages/merge.svg';
-import './icons/advantages/khimki.svg';
-import './icons/advantages/key.svg';
-import './icons/advantages/garanty.svg';
-import './icons/advantages/expo.svg';
+require('./icons/advantages/merge.svg');
+require('./icons/advantages/khimki.svg');
+require('./icons/advantages/key.svg');
+require('./icons/advantages/garanty.svg');
+require('./icons/advantages/expo.svg');
 
 /////////////////////////////////
 // Bootstrap 4 JavaScript      //
 /////////////////////////////////
 
-import 'bootstrap/js/dist/util';
-import 'bootstrap/js/dist/dropdown';
-import 'bootstrap/js/dist/alert';
-import 'bootstrap/js/dist/button';
-import 'bootstrap/js/dist/carousel';
-import 'bootstrap/js/dist/collapse';
-import 'bootstrap/js/dist/modal';
-import 'bootstrap/js/dist/popover';
-import 'bootstrap/js/dist/scrollspy';
-import 'bootstrap/js/dist/tab';
-import 'bootstrap/js/dist/tooltip';
+require('bootstrap/js/dist/util');
+require('bootstrap/js/dist/dropdown');
+require('bootstrap/js/dist/alert');
+require('bootstrap/js/dist/button');
+require('bootstrap/js/dist/carousel');
+require('bootstrap/js/dist/collapse');
+require('bootstrap/js/dist/modal');
+require('bootstrap/js/dist/popover');
+require('bootstrap/js/dist/scrollspy');
+require('bootstrap/js/dist/tab');
+require('bootstrap/js/dist/tooltip');
 
 
 /////////////////////////////////
 // Custom scripts              //
 /////////////////////////////////
 
-import './js/myscripts';
+require('./js/myscripts');
 
 /////////////////////////////////
-// Custom scripts              //
+// Картинки                    //
 /////////////////////////////////
 
-import './images/zamena-matrizi.jpg';
+require('./images/zamena-matrizi.jpg');
