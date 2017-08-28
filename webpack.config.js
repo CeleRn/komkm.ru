@@ -20,9 +20,11 @@ let svgoConfig = JSON.stringify({
   }, {
       convertColors: {
           shorthex: false
-      }
+        }
   }, {
       convertPathData: true
+  }, {
+    removeHiddenElems: true
   }]
 });
 
@@ -57,7 +59,12 @@ module.exports = {
           path.join(__dirname, "assets"),
           path.join(__dirname, "node_modules", "svg-sprite-loader", "lib", "plugin.js")
         ],
-        use: "babel?presets[]=es2015"
+        exclude: /\/node_modules\//,
+        loader: 'babel',
+        query: {
+          cacheDirectory: true, // включить кэширование
+          presets: 'es2015'
+        }
       }, { // SCSS в файлы
           test: /\.(sass|scss)$/,
           use: extractCSS.extract({
@@ -66,12 +73,12 @@ module.exports = {
               loader: 'css-loader'
             }, {
               loader: 'sass-loader',
-              options: {
-                includePaths: [
-                  path.resolve(__dirname, 'node_modules'),
-                  path.resolve(__dirname, 'public', 'assets', 'css')
-                ]
-              }
+              // options: {
+              //   includePaths: [
+              //     path.resolve(__dirname, 'node_modules'),
+              //     path.resolve(__dirname, 'public', 'assets', 'css')
+              //   ]
+              // }
             }]
           })
       }, { // CSS в файлы 
@@ -104,7 +111,8 @@ module.exports = {
         test: /\.ejs$/, 
         loader: 'ejs-render-loader'
       }
-    ]
+    ],
+    noParse: /jquery\/dist\/jquery.js/
   },
   plugins: [
     // new webpack.NoEmitOnErrorsPlugin(),
@@ -138,7 +146,19 @@ module.exports = {
       filename: 'index.html',
       template: 'ejs-render?raw=true!./assets/html/index.ejs',
       inject: 'body'
+    }),
+    new webpack.HotModuleReplacementPlugin({
+      // Options...
     })
-  ]
+  ],
+  devServer: {
+    contentBase: [path.join(__dirname, "public"), path.join(__dirname, "assets")],
+    watchContentBase: true,
+    hot: true,
+    watchOptions: {
+      poll: true,
+      ignored: /\/node_modules\//
+    }
+  }
 };
 

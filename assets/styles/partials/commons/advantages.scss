@@ -1,0 +1,58 @@
+.advantages {
+    padding: 80px 0;
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &__title {
+        color: #888;
+        text-transform: uppercase;
+        font-family: $font-family-serif;
+        text-align: center;
+        margin-bottom: 1.5em;
+    }
+}
+.advantage {
+    position: relative;
+    flex: 0 0 23%;
+    padding: 25px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // border: 1px solid #dedede;
+    &:hover {
+
+        .advantage__description {
+            opacity: 1;
+        }
+    }
+    &__title {
+        font-size: 1.5em;
+        font-weight: 700;
+        color: #323232;
+        text-align: center;
+    }
+    &__icon {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 20px;
+        fill: $main-color;
+    }
+    &__description {
+        position: absolute;
+        padding: 15px;
+        left: 0;
+        right: 0;
+        top: 0;
+        font-size: 1em;
+        line-height: 1.2em;
+        background-color: $main-color;
+        text-shadow: $default-text-shadow;
+        box-shadow: $default-text-shadow;
+        color: #f5f5f5;
+        display: block;
+        opacity: 0;
+        transition: opacity .7s ease-in-out 0s;
+    }
+}

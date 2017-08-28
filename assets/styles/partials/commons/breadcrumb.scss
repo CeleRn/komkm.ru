@@ -11,7 +11,8 @@
         flex-wrap: wrap;
     }
     &__item {
-        display: block;
+        display: flex;
+        align-items: center;
         padding: .5em .4em;
         position: relative;
         padding-right: 1em;
@@ -34,9 +35,19 @@
     }
     &__link {
         color: #999;
+        display: flex;
+        align-items: center;
         &:hover, &:focus {
             color: #333;
             text-decoration: none;
+            .breadcrumb__icon {
+                fill: #333;
+            }
         }
+    }
+    &__icon {
+        width: 18px;
+        height: 18px;
+        fill: #999;
     }
 }

@@ -20,6 +20,7 @@ require('./icons/balance.svg');
 require('./icons/call.svg');
 require('./icons/cart.svg');
 require('./icons/chat.svg');
+require('./icons/copy.svg');
 require('./icons/download.svg');
 require('./icons/favorite.svg');
 require('./icons/forum.svg');
@@ -31,6 +32,7 @@ require('./icons/map.svg');
 require('./icons/person.svg');
 require('./icons/place.svg');
 require('./icons/review.svg');
+require('./icons/repair.svg');
 require('./icons/search.svg');
 require('./icons/shipping.svg');
 require('./icons/time.svg');
@@ -46,6 +48,12 @@ require('./icons/hardware/photocamera.svg');
 require('./icons/hardware/printer.svg');
 require('./icons/hardware/tablet.svg');
 require('./icons/hardware/tv.svg');
+// Иконки для преимуществ
+require('./icons/advantages/merge.svg');
+require('./icons/advantages/khimki.svg');
+require('./icons/advantages/key.svg');
+require('./icons/advantages/garanty.svg');
+require('./icons/advantages/expo.svg');
 
 /////////////////////////////////
 // Bootstrap 4 JavaScript      //
@@ -69,3 +77,9 @@ import 'bootstrap/js/dist/tooltip';
 /////////////////////////////////
 
 import './js/myscripts';
+
+/////////////////////////////////
+// Custom scripts              //
+/////////////////////////////////
+
+import './images/zamena-matrizi.jpg';

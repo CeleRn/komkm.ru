@@ -24,28 +24,25 @@
         position: absolute;
         left: 0;
         top: 0;
-        width: 2em;
-        padding: .32em;
+        width: 40px;
+        padding: 6px 7.5px;
         text-align: center;
-        height: 1.7em;
-        font-size: 1.5em;
+        height: 35px;
         display: block;
         background-color: $accent-color;
-        color: #fff;
-        &.fa-envelope-o {
-            padding: .3em;
-        }
+        fill: #fff;
     }
     &__copy {
         position: absolute;
-        right: 0;
-        top: 0;
-        padding: .32em;
-        padding: .8em;
+        right: 8px;
+        top: 50%;
+        margin-top: -9px;
+        width: 18px;
+        height: 18px;
         text-align: center;
-        color: #ccc;
+        fill: #ccc;
         &:hover {
-            color: #333;
+            fill: #333;
         }
     }
 }

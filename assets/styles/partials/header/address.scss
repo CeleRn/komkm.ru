@@ -28,6 +28,9 @@
         position: absolute;
         left: -1.8em;
         top: 0;
+        fill: #b2b2b2;
+        width: 18px;
+        height: 18px;
     }
     &__title-text {
         font-size: .8em;
@@ -47,8 +50,7 @@
         margin-top: .2em;
     }
     &__icon {
-        color: #b2b2b2;
-        font-size: .8em;
+        
         
     }
     &__list {

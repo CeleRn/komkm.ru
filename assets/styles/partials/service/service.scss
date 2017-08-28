@@ -35,21 +35,41 @@
 }
 .other-devices {
     display: flex;
-
+    border-top: 3px solid $second-color;
+    justify-content: space-between;
     &__link {
         padding: .5em;
+        margin: 0 0.1em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:hover, &:focus {
+            background-color: #f2f2f2;
+            .other-devices__icon {
+                fill: #888;
+            }
+        }
+        &:first-child {
+            margin-left: 0;
+        }
         &_active {
             color: #626262;
-            background-color: $main-color;
-            
+            background-color: $second-color;
+            &:hover, &:focus {
+                background-color: $second-color;
+                .other-devices__icon {
+                    fill: #f5f5f5;
+                }
+            }
             .other-devices__icon {
-                color: #fff;
+                fill: #fff;
             }
         }
     }
     &__icon {
-        font-size: 2.5em;
-        color: #b2b2b2;
+        width: 48px;
+        height: 48px;
+        fill: #ccc;
     }
 }
 .info-block {
@@ -58,9 +78,6 @@
 .price {
     position: relative;
     border-bottom: 1px solid rgba($accent-color, .3);
-    
-    
-    
     &__value {
         font-size: 3em;
         font-weight: 400;
@@ -72,19 +89,23 @@
     &__more-link {
         position: absolute;
         right: 0;
-        bottom: .5em;
+        bottom: 0;
         display: block;
         font-size: 14px;
-        line-height: 21px;
-        padding: 0 .5em;
-        color: $accent-color;
+        line-height: 35px;
+        padding: 0 1.2em;
+        background-color: $accent-color;
+        color: #ffffff;
         &:hover, &:focus {
-            color: darken($accent-color, 7.5%);
+            background-color: darken($accent-color, 7.5%);
+            color: #ffffff;
+            text-decoration: none;
         }
     }
 }
 .area {
     &__title {
+        text-align: center;
         font-size: 1.5em;
         font-weight: 300;
         color: #888;
@@ -106,7 +127,7 @@
     max-width: 48%;
     position: relative;
     padding: .5em 1em .5em 4em;
-    border: 1px solid #efefef;
+    border: 1px solid $second-color-light;
     border-radius: .5em;
     &:hover {
         background-color: #f5f5f5;
@@ -116,6 +137,7 @@
     }
     
     &__title {
+        
         font-size: 1.1em;
         color: #333;
         font-weight: 400;
@@ -129,10 +151,10 @@
     &__link-more {
         position: absolute;
         bottom: -1.4em;
-        right: .5em;
+        right: 1.2em;
         font-size: 14px;
         padding: .5em 1em;
-        border: 2px solid rgba($accent-color,.8);
+        border: 1px solid rgba($accent-color,.8);
         
         border-radius: 1.5em;
         display: block;
@@ -147,12 +169,13 @@
             cursor: pointer;
         }
     }
-    .fa {
-        display: block;
+    &__icon {
         position: absolute;
-        top: .25em;
-        left: .25em;
-        color: $second-color-light;
+        top: .5em;
+        left: .5em;
+        width: 2.5em;
+        height: 2.5em;
+        fill: $second-color-light;
     }
 }
 
@@ -162,6 +185,12 @@
 .detail-info {
     margin-top: 70px;
     border-bottom:2px solid $second-color-dark;
+    &__icon {
+        width: 24px;
+        height: 24px;
+        fill: #fff;
+        margin-right: 3px;
+    }
     .nav {
         background-color: $second-color;
         display: flex;
@@ -172,26 +201,23 @@
     }
     .nav-link {
         color: #fff;
-        font-weight: 300;
-        text-shadow: $default-text-shadow;
+        font-weight: 400;
+        display: flex;
+        align-items: center;
         &.active {
             background-color: #fff;
             color: #666;
             border-top-color:$second-color;
             text-shadow: none;
-            .fa {
-                color: $second-color-dark;
+            .detail-info__icon {
+                fill: #666;
             }
-        }
-        
-        .fa {
-            margin-right: 3px;
-            color: #fff;
         }
     }
     .tab-pane {
         padding: 1.5em;
     }
+    
 }
 
 // Блок вкладки Стоимость (подробно)
