@@ -151,14 +151,11 @@ module.exports = {
       // Options...
     })
   ],
-  devServer: {
-    contentBase: [path.join(__dirname, "public"), path.join(__dirname, "assets")],
-    watchContentBase: true,
-    hot: true,
-    watchOptions: {
-      poll: true,
-      ignored: /\/node_modules\//
-    }
-  }
+  // devServer: {
+  //   // contentBase: __dirname + "/public/",
+  //   // contentBase: path.join(__dirname, "public"),
+  //   // compress: true,
+  //   port: 9000
+  // }
 };
 
