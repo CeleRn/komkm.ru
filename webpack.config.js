@@ -100,7 +100,7 @@ module.exports = {
           {
             loader: 'svg-sprite-loader',
             options: {
-              extract: true,
+              extract: false,
               spriteFilename: 'assets/icons/icons-sprite.svg'
             }
           }, {
