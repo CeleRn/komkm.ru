@@ -20,11 +20,9 @@ let svgoConfig = JSON.stringify({
   }, {
       convertColors: {
           shorthex: false
-        }
+      }
   }, {
       convertPathData: true
-  }, {
-    removeHiddenElems: true
   }]
 });
 
