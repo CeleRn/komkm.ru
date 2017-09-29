@@ -32,12 +32,12 @@ require('./images/logo-only-komkm.svg');
 // require('./icons/person.svg');
 // require('./icons/place.svg');
 // require('./icons/review.svg');
-require('./icons/repair.svg');
-require('./icons/search.svg');
-require('./icons/shipping.svg');
-require('./icons/time.svg');
-require('./icons/videocam.svg');
-require('./icons/warning.svg');
+// require('./icons/repair.svg');
+// require('./icons/search.svg');
+// require('./icons/shipping.svg');
+// require('./icons/time.svg');
+// require('./icons/videocam.svg');
+// require('./icons/warning.svg');
 
 // Иконки для оборудования
 require('./icons/hardware/computer.svg');
