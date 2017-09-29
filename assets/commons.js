@@ -16,7 +16,7 @@ require('./images/logo-only-komkm.svg');
 /////////////////////////////////
 
 // Иконки для интерфейса
-require('./icons/balance.svg');
+require('./icons/balance2.svg');
 // require('./icons/call.svg');
 // require('./icons/cart.svg');
 // require('./icons/chat.svg');
