@@ -102,7 +102,7 @@ module.exports = {
               spriteFilename: 'assets/icons/icons-sprite.svg'
             }
           }, {
-            loader: 'svgo-loader?' + svgoConfig
+            loader: 'svgo-loader?' // + svgoConfig
           }
         ]
       }, {
