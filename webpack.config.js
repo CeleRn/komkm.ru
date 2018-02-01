@@ -18,6 +18,12 @@ let svgoConfig = JSON.stringify({
   plugins: [{
       removeTitle: true
   }, {
+      removeUselessStrokeAndFill: true
+  }, {
+      removeAttrs: {
+          attrs: '(stroke|fill)'
+      },
+  }, {
       convertColors: {
           shorthex: false
       }
@@ -102,7 +108,7 @@ module.exports = {
               spriteFilename: 'assets/icons/icons-sprite.svg'
             }
           }, {
-            loader: 'svgo-loader?' // + svgoConfig
+            loader: 'svgo-loader?' + svgoConfig
           }
         ]
       }, {
